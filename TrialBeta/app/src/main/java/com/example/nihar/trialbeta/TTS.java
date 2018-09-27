@@ -20,8 +20,6 @@ public class TTS {
                     if (result == TextToSpeech.LANG_MISSING_DATA
                             || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                         Log.e("TTS", "Language not supported");
-                    } else {
-
                     }
                 } else {
                     Log.e("TTS", "Initialization failed");
@@ -41,8 +39,13 @@ public class TTS {
         mTTS.setPitch((float) 1.0);
         mTTS.setSpeechRate((float)1.0);
 
-        mTTS.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+        mTTS.speak(text, TextToSpeech.QUEUE_ADD, null);
 
+    }
+    public  static void pause(){
+        if (mTTS != null) {
+            mTTS.stop();
+        }
     }
     public static void destroy(){
         if (mTTS != null) {

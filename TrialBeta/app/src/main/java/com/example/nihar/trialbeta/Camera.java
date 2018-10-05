@@ -132,11 +132,10 @@ public class Camera extends AppCompatActivity {
         */
         updater();
 
-        ///
+        //
 
         textureView.setOnTouchListener(new View.OnTouchListener() {
             private GestureDetector gestureDetector = new GestureDetector(Camera.this, new GestureDetector.SimpleOnGestureListener() {
-
                 @Override
                 public boolean onDoubleTap(MotionEvent e) {
                     if(textFound)
@@ -160,17 +159,10 @@ public class Camera extends AppCompatActivity {
 
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-
                 gestureDetector.onTouchEvent(event);
                 return true;
             }
-
-
         });
-
-
-
-
     }
 
 
@@ -189,11 +181,11 @@ public class Camera extends AppCompatActivity {
                         if(!timerpause){
                             bitmap = textureView.getBitmap();
                             detectTxt(bitmap);
-                            //detectface(bitmap);
+                            detectface(bitmap);
                             detectLabel(bitmap);
                         }
 
-
+                        /*
                         Handler handler = new Handler();
                         handler.postDelayed(new Runnable() {
 
@@ -202,7 +194,7 @@ public class Camera extends AppCompatActivity {
 
                             }
                         }, 1000);
-
+                        */
                     }
                 });
             }
@@ -237,6 +229,7 @@ public class Camera extends AppCompatActivity {
         if(imageBitmap==null){
             return;
         }
+        faceFound=false;
         FirebaseVisionFaceDetectorOptions options =
                 new FirebaseVisionFaceDetectorOptions.Builder()
                         .setModeType(FirebaseVisionFaceDetectorOptions.ACCURATE_MODE)

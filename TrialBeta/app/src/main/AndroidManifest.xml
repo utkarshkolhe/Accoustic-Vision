@@ -26,7 +26,8 @@
         <activity
             android:name=".Navigation"
             android:label="@string/title_activity_navigation"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"></activity>
+        <activity android:name=".Main3Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

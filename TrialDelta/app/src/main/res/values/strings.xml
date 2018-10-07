@@ -8,4 +8,7 @@
     <string name="txt_enter_username">Enter Username:</string>
     <string name="txt_enter_password">Enter Password:</string>
     <string name="txt_reenter_password">Enter Password Again:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

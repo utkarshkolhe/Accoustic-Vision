@@ -10,10 +10,10 @@
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
+        android:layout_height="357dp"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="77dp"
+        android:layout_alignTop="@+id/progressBar"
+        android:layout_marginTop="250dp"
         android:ems="10"
         android:hint="You will see input here"
         android:inputType="textPersonName" />
@@ -27,4 +27,5 @@
 
         android:layout_marginBottom="13dp"
         android:text="Click to speak" />
+
 </RelativeLayout>

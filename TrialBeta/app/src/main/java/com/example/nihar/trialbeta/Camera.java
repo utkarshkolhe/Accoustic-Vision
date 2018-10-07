@@ -185,6 +185,16 @@ public class Camera extends AppCompatActivity {
                             detectLabel(bitmap);
                         }
 
+                        if(textFound)
+                            TTS.speak(totaltext);
+                        else
+                            TTS.speak("No Text Detected");
+                        if(faceFound)
+                            TTS.speak(expression+" Expression Detected on Face");
+                        if(labelsFound){
+                            TTS.speak("Detected objects are: "+ alllabels);
+                        }
+
                         /*
                         Handler handler = new Handler();
                         handler.postDelayed(new Runnable() {
@@ -198,7 +208,7 @@ public class Camera extends AppCompatActivity {
                     }
                 });
             }
-        }, 0, 1000);
+        }, 0, 5000);
     }
 
     private void detectTxt(Bitmap bitmap) {
@@ -370,6 +380,8 @@ public class Camera extends AppCompatActivity {
             labelsFound=true;
         }
     }
+
+
     TextureView.SurfaceTextureListener textureListener = new TextureView.SurfaceTextureListener() {
         @Override
         public void onSurfaceTextureAvailable(SurfaceTexture surface, int width, int height) {
@@ -523,6 +535,7 @@ public class Camera extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        /*
         timerpause=false;
         Log.e(TAG, "onResume");
         startBackgroundThread();
@@ -531,15 +544,18 @@ public class Camera extends AppCompatActivity {
         } else {
             textureView.setSurfaceTextureListener(textureListener);
         }
+        */
     }
 
     @Override
     protected void onPause() {
+        /*
         Log.e(TAG, "onPause");
         timerpause=true;
         //closeCamera();
         stopBackgroundThread();
         TTS.pause();
+        */
         super.onPause();
     }
 

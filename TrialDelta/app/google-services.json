@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "520177192081",
+    "firebase_url": "https://trialdelta-d393f.firebaseio.com",
+    "project_id": "trialdelta-d393f",
+    "storage_bucket": "trialdelta-d393f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520177192081:android:4edee352aab0821c",
+        "android_client_info": {
+          "package_name": "com.example.nihar.delta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "520177192081-luv8ks84irajeff1o9h51r2ij3dkgdk0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nihar.delta",
+            "certificate_hash": "e55fa2cbde83f814d905adf585a2465b624d9ece"
+          }
+        },
+        {
+          "client_id": "520177192081-eiano7qvf2i3aklf8q0laeed38tq3s2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgY8ZAfhwfy8XCdQGed7YoGzbMWhF5nvs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "520177192081-eiano7qvf2i3aklf8q0laeed38tq3s2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

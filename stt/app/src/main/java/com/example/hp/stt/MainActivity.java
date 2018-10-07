@@ -70,6 +70,9 @@ public class MainActivity extends AppCompatActivity {
             public void onEvent(int i, Bundle bundle) {
             }
         });
+
+        mSpeechRecogniser.startListening(mSpeechRecogniserIntent);
+
         findViewById(R.id.button).setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
@@ -87,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+
     }
     private void checkPermission()
     {
